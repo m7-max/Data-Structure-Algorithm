@@ -111,3 +111,134 @@
         ```
   * **Time Complexity:**
     * Tower of Hanoi (`TowerofHanoi`): $O(2^n)$
+
+ * **8. Stack with Array**
+  * **Question Description:** Implement a Stack data structure using a fixed-size array supporting push operations (`push`) and pop operations (`pop`) with stack overflow and underflow checks[cite: 4].
+  * **Test Cases:**
+    * **Test Case 1:** Push elements onto the stack and pop them[cite: 4].
+      * **Input Sequence:** `push(11)`, `push(22)`, `push(33)`, `push(44)`, followed by three `pop()` operations[cite: 4]
+      * **Expected Output:** 
+        ```text
+        poped:44
+        poped:33
+        poped:22
+        ```
+  * **Time Complexity:**
+    * Push (`push`): $O(1)$[cite: 4]
+    * Pop (`pop`): $O(1)$[cite: 4]
+
+---
+
+* **9. Stack with Linked List**
+  * **Question Description:** Implement a Stack data structure using a singly linked list supporting dynamic push operations (`push`) and pop operations (`pop`) from the top[cite: 5].
+  * **Test Cases:**
+    * **Test Case 1:** Push elements onto the linked list stack and pop them[cite: 5].
+      * **Input Sequence:** `push(11)`, `push(22)`, `push(33)`, `push(44)`, followed by three `pop()` operations[cite: 5]
+      * **Expected Output:** 
+        ```text
+        poped:44
+        poped:33
+        poped:22
+        ```
+  * **Time Complexity:**
+    * Push (`push`): $O(1)$[cite: 5]
+    * Pop (`pop`): $O(1)$[cite: 5]
+
+---
+
+* **10. Queue with Array**
+  * **Question Description:** Implement a Queue data structure using a fixed-size array supporting enqueue (`enqueue`) and dequeue (`dequeue`) operations with overflow and underflow management[cite: 6].
+  * **Test Cases:**
+    * **Test Case 1:** Enqueue elements into the queue and dequeue them[cite: 6].
+      * **Input Sequence:** `enqueue(1)`, `enqueue(2)`, `enqueue(3)`, `enqueue(4)`, followed by two `dequeue()` operations[cite: 6]
+      * **Expected Output:** 
+        ```text
+        dequeue:1
+        dequeue:2
+        ```
+  * **Time Complexity:**
+    * Enqueue (`enqueue`): $O(1)$[cite: 6]
+    * Dequeue (`dequeue`): $O(1)$[cite: 6]
+
+---
+
+* **11. Queue with Linked List**
+  * **Question Description:** Implement a Queue data structure using a singly linked list supporting element insertion at the end (`enqueue`), element deletion from the front (`dequeue`), and traversal/printing (`print`)[cite: 7].
+  * **Test Cases:**
+    * **Test Case 1:** Enqueue elements from an array, print the queue, and perform dequeues[cite: 7].
+      * **Input Sequence:** Enqueue elements `{1, 2, 3, 4, 5, 6, 77}`, call `print()`, then perform two `dequeue()` calls[cite: 7]
+      * **Expected Output:** 
+        ```text
+        1 enueued 
+        2 enueued 
+        3 enueued 
+        4 enueued 
+        5 enueued 
+        6 enueued 
+        77 enueued 
+        1 2 3 4 5 6 77 1 Dequeued 
+        2 Dequeued 
+        ```
+  * **Time Complexity:**
+    * Enqueue (`enqueue`): $O(n)$ (traverses to the tail node)[cite: 7]
+    * Dequeue (`dequeue`): $O(1)$[cite: 7]
+    * Traversal/Print (`print`): $O(n)$[cite: 7]
+
+---
+
+* **12. Merge Sort**
+  * **Question Description:** Implement Merge Sort using a divide-and-conquer strategy via recursive partitioning and a helper merge function to sort a vector of integers in ascending order[cite: 8].
+  * **Test Cases:**
+    * **Test Case 1:** Sort an unsorted vector of elements[cite: 8].
+      * **Input Sequence:** `vec = {12, 31, 35, 8, 17, 32}`[cite: 8]
+      * **Expected Output (Sorted vector):** `8 12 17 31 32 35`[cite: 8]
+  * **Time Complexity:**
+    * Merge Sort (`recursive` / `merge`): $O(n \log n)$[cite: 8]
+
+---
+
+* **13. Quick Sort**
+  * **Question Description:** Implement Quick Sort using a partitioning scheme (`Partition`) to recursively sort a vector of integers around a pivot element[cite: 9].
+  * **Test Cases:**
+    * **Test Case 1:** Sort an unsorted vector of integers[cite: 9].
+      * **Input Sequence:** `vec = {9, 3, 7, 5, 6, 2, 8, 4, 1}`[cite: 9]
+      * **Expected Output (Sorted vector):** `1 2 3 4 5 6 7 8 9`[cite: 9]
+  * **Time Complexity:**
+    * Quick Sort (Average/Best Case): $O(n \log n)$[cite: 9]
+    * Quick Sort (Worst Case): $O(n^2)$[cite: 9]
+
+---
+
+* **14. Radix Sort**
+  * **Question Description:** Implement Radix Sort utilizing a stable digit-by-digit counting sort helper (`count_sort`) to sort a vector of non-negative integers[cite: 10].
+  * **Test Cases:**
+    * **Test Case 1:** Sort an array of multi-digit numbers[cite: 10].
+      * **Input Sequence:** `vec = {253, 192, 3, 2, 10, 75, 478, 88}`[cite: 10]
+      * **Expected Output (Sorted vector):** `2 3 10 75 88 192 253 478`[cite: 10]
+  * **Time Complexity:**
+    * Radix Sort (`radix_sort`): $O(d \cdot (n + k))$ (where $d$ is the number of digits, $n$ is the number of elements, and $k$ is the base of the number system)[cite: 10]
+
+---
+
+* **15. Binary Tree**
+  * **Question Description:** Implement a basic Binary Tree structure with parent pointers supporting interactive node creation (`Binarytree`) and recursive inorder traversal (`inorder`)[cite: 11].
+  * **Test Cases:**
+    * **Test Case 1:** Build a binary tree interactively and print its inorder traversal[cite: 11].
+      * **Input Sequence:** Dynamic runtime input for node data and child flags (`l`, `r`) starting from a root node[cite: 11]
+      * **Expected Output:** Inorder traversal sequence corresponding to the constructed tree structure[cite: 11]
+  * **Time Complexity:**
+    * Traversal (`inorder`): $O(n)$[cite: 11]
+    * Tree Construction (`Binarytree`): $O(n)$[cite: 11]
+
+---
+
+* **16. AVL Tree**
+  * **Question Description:** Implement a self-balancing Binary Search Tree (AVL Tree) supporting balance factor tracking, tree rotations (`right_rotate`, `left_rotate`), node balancing (`balance`), insertion (`insert`), and inorder traversal (`inorder_traverse`)[cite: 12].
+  * **Test Cases:**
+    * **Test Case 1:** Insert a sequence of elements into the AVL tree and perform an inorder traversal[cite: 12].
+      * **Input Sequence:** `arr = {12, 34, 26, 13, 54}`[cite: 12]
+      * **Expected Output (Sorted order due to BST property):** `12 13 26 34 54`[cite: 12]
+  * **Time Complexity:**
+    * Insertion (`insert` with balancing): $O(\log n)$[cite: 12]
+    * Rotations (`right_rotate` / `left_rotate`): $O(1)$[cite: 12]
+    * Traversal (`inorder_traverse`): $O(n)$[cite: 12]
