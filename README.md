@@ -242,3 +242,38 @@
     * Insertion (`insert` with balancing): $O(\log n)$[cite: 12]
     * Rotations (`right_rotate` / `left_rotate`): $O(1)$[cite: 12]
     * Traversal (`inorder_traverse`): $O(n)$[cite: 12]
+  
+---
+
+  * **17. Bin Sort (Bucket/Counting style using linked lists)**
+  * **Question Description:** Implement Bin Sort using linked list bins to distribute elements based on their key values, and gather them back in sorted order[cite: 12].
+  * **Test Cases:**
+    * **Test Case 1:** Sort an array of elements with a specified maximum value[cite: 12].
+      * **Input Sequence:** `arr[] = {4, 2, 0, 4, 1, 3, 2, 5}`, `maxVal = 5`[cite: 12]
+      * **Expected Output (Sorted array):** `0 1 2 2 3 4 4 5`[cite: 12]
+  * **Time Complexity:**
+    * Scatter and Gather (`binSort`): $O(n + maxVal)$[cite: 12]
+
+---
+
+* **18. Bucket Sort**
+  * **Question Description:** Implement Bucket Sort by distributing elements into individual buckets, sorting each bucket independently, and concatenating them back[cite: 13].
+  * **Test Cases:**
+    * **Test Case 1:** Sort a vector of floating-point numbers[cite: 13].
+      * **Input Sequence:** `arr = {0.32, 0.67, 2.43, 0.75, 1.23}`[cite: 13]
+      * **Expected Output (Sorted vector):** `0.32 0.67 0.75 1.23 2.43`[cite: 13]
+  * **Time Complexity:**
+    * Bucket Sort Average Case: $O(n + k)$ (where $k$ is the number of buckets)[cite: 13]
+    * Bucket Sort Worst Case: $O(n^2)$[cite: 13]
+
+---
+
+* **19. Kth Smallest Element**
+  * **Question Description:** Implement an algorithm based on the Quickselect partitioning method to find the Kth smallest element in a vector[cite: 14].
+  * **Test Cases:**
+    * **Test Case 1:** Find the 3rd index smallest element in an array[cite: 14].
+      * **Input Sequence:** `arr = {10, 4, 5, 8, 6, 11, 26}`, `k = 3`[cite: 14]
+      * **Expected Output:** `Kth smallest element is:8`[cite: 14]
+  * **Time Complexity:**
+    * Quickselect Average Case: $O(n)$[cite: 14]
+    * Quickselect Worst Case: $O(n^2)$[cite: 14]
